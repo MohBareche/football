@@ -27,7 +27,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <h1 class="logo-div">
-                            <a href="/">Footballkik</a>
+                            <a href="/">Football</a>
                         </h1>
                     </div>
 
@@ -40,16 +40,6 @@
                                 <h2 class="reg-div">
                                     <a href="/">
                                         Login
-                                    </a>
-                                </h2>
-
-                            </li>
-
-
-                            <li class="reg_link2">
-                                <h2 class="reg-div">
-                                    <a href="/signup">
-                                        Register
                                     </a>
                                 </h2>
                             </li>
@@ -66,9 +56,18 @@
         <div class="main">
             <form action="/signup" method="post">
 
-                <h1>
+                <h1 class="text-primary">
                     Register
                 </h1>
+
+                <% if(hasErrors) {%>
+                    <div class="alert alert-danger text-center">
+                        <a href="#" class="close" data-dismis="alert" aria-label="close">&times;</a>
+                        <% _.forEach(messages, function(error){ %>
+                            <%= error  %><br>
+                        <% }) %>
+                    </div>
+                <% } %>
 
                 <div class="inset">
                     <p>
@@ -86,8 +85,8 @@
                 </div>
 
                 <p class="p-container">
-                    <span><a href="/">Login</a></span>
-                    <input type="submit" class="login-log" style=" background: #3bb5ec; border: #3bb5ec;"
+                    <span><a href="/">J'ai déjà un compte</a></span>
+                    <input type="submit" class="login-log btn btn-primary"
                         value="Register">
                 </p>
             </form>

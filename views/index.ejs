@@ -1,1 +1,90 @@
-<h1>Login Page</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Football</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+    <div class="container logo-container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar" id="nav_bar" role="navigation">
+
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle navbar_icon" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <h1 class="logo-div">
+                            <a href="/">Football</a>
+                        </h1>
+                    </div>
+
+
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li style="padding-right: 50px;">
+                                <h2 class="reg-div">
+                                    <a href="/signup">
+                                        Register
+                                    </a>
+                                </h2>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="main">
+        <div class="main">
+            <form action="/signin" method="post">
+
+                <h1 class="text-success">
+                    Login
+                </h1>
+
+
+
+                <div class="inset">
+                    <p>
+                        <label for="email">EMAIL ADDRESS</label>
+                        <input type="text" name="email" placeholder="" />
+                    </p>
+                    <p>
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" placeholder="" />
+                    </p>
+                </div>
+
+                <p class="p-container">
+                    <span><a href="/signup">Vous n'avez pas de compte ?</a></span>
+                    <input type="submit" class="login-log btn btn-success"
+                        value="Login">
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

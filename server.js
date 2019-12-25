@@ -3,7 +3,6 @@ const ejs = require('ejs')
 const http = require('http')
 const port = process.env.PORT || 3000
 const cookieParser = require('cookie-parser')
-// const { check, validationResult } = require('express-validator')
 const session = require('express-session')
 const MongoStore = require('connect-mongo')(session)
 const mongoose = require('mongoose')
@@ -15,7 +14,7 @@ const container = require('./container')
 
 
 
-container.resolve(function (users) {
+container.resolve(function (users, _) {
 
   mongoose.Promise = global.Promise
   mongoose.connect('mongodb://localhost/football', {
@@ -65,6 +64,8 @@ container.resolve(function (users) {
     app.use(flash())
     app.use(passport.initialize())
     app.use(passport.session())
+
+    app.locals._ = _
   }
 
 })
