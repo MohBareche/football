@@ -1,0 +1,36 @@
+{
+  "name": "football",
+  "version": "1.0.0",
+  "description": "Chat application nodejs mongodb express and socket.io",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohBareche/football.git"
+  },
+  "keywords": [],
+  "author": "Moh Barèche",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MohBareche/football/issues"
+  },
+  "homepage": "https://github.com/MohBareche/football#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
+    "dependable": "^1.1.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-promise-router": "^3.0.3",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.3.0",
+    "lodash": "^4.17.15",
+    "mongoose": "^5.8.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}
